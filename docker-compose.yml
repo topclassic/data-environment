@@ -19,7 +19,7 @@ services:
       - ./redis_data:/data
 
   postgres:
-    image: postgres
+    image: postgres:9.5
     networks:
       - postgres_net
     environment:
