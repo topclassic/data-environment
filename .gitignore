@@ -3,5 +3,5 @@ game/redis_data
 game/pgadmin
 game/postgresql
 game/postgresql_data
-
+messageQ/rabbitmq
 sanook-app/mysql

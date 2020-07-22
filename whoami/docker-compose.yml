@@ -1,0 +1,16 @@
+# ...
+version: '3'
+
+services:
+  whoami:
+    image: emilevauge/whoami
+    labels:
+      - "traefik.backend=whoami"
+      - "traefik.frontend.rule=Host:test.local"
+    networks:
+      - web
+
+networks:
+  web:
+    external:
+      name: traefik_default
